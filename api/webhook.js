@@ -99,4 +99,4 @@ app.post('/api/webhook', async (req, res) => {
 
 // Local testing port
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = app;
