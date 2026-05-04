@@ -38,6 +38,7 @@ app.get('/api/webhook', (req, res) => {
 
 // ROUTE 2: Handle Incoming WhatsApp Messages
 app.post('/api/webhook', async (req, res) => {
+  console.log("RAW PAYLOAD:", JSON.stringify(req.body, null, 2));
   // Always return 200 immediately so Meta doesn't retry the request
   res.sendStatus(200); 
 
